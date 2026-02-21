@@ -1,76 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Paul's Portfolio</title>
-    <link rel="stylesheet" href="major-project-1.css">
-    <script 
-    defer 
-    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
-    </script>
-</head>
-<body class="text-bold flex flex-col md:flex-row min-h-screen">
-    <header class="text-bold text-black ">
-        <aside class="sticky top-0 h-fit w-full md:h-screen md:w-60 flex flex-col items-center p-6 shadow-2xl rounded-xl">
-            <div>
-                <span class="text-xl md:block text-center">John Paul Junglen</span>
-            </div>
-            <nav class="flex flex-row w-full justify-center space-x-4 md:space-x-0 md:flex-col  md:space-y-9 md:justify-start text-center mt-6">
-                <a href="#" class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Home</a>
-                <a href="#" class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">About</a>
-                <a href="#" class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Projects</a>
-                <a href="#" class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Skills</a>
-                <a href="#" class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Contact</a>
-            </nav>
-        </aside>
-    </header>
-    <main class="flex-1 rounded-xl">
-        <section class="top-0 h-screen w-full z-10 hero">
-            <div class="image-container flex flex-col items-center md:items-end justify-center md:justify-end p-4 md:p-12">
-                <img src="my-face.jpg" alt="handsome bald guy" class="md:h-60 md:w-60 h-48 w-48 rounded-full border-4 border-slate-100 object-cover">
-            </div>
-            <div class="bottom-hero w-full px-8 xl:px-16 2xl:px-24 z-10">
-                <div class="space-y-8 xl:space-y-12 2xl:space-y-16">
-                    <div class="font-bold text-left max-w-7xl">
+    <link rel="stylesheet" href="major-project-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+    ></script>
+    </head>
+    <body class="font-bold flex flex-col md:flex-row">
+        <header class="md:top-0 md:z-50 text-bold text-black bg-white">
+            <aside
+            class="sticky top-0 h-fit w-full md:h-screen md:w-60 flex flex-col items-center p-6 shadow-lg md:shadow-none lg:shadow-2xl rounded-xl">
+                <div>
+                    <span class="text-xl md:block text-center">John Paul Junglen</span>
+                </div>
+                <nav
+                  class="flex flex-row w-full justify-center space-x-4 md:space-x-0 md:flex-col md:space-y-9 md:justify-start text-center mt-6">
+                  <a
+                    href="#"
+                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    >Home</a>
+                  <a
+                    href="#"
+                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    >About</a>
+                  <a href="#"
+                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    >Projects</a>
+                  <a
+                    href="#"
+                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Contact</a>
+                </nav>
+          </aside>
+        </header>
+        <main class="flex-1 rounded-xl">
+            <section class="top-0 min-h-screen w-full z-10 hero">
+                <div class="image-container flex flex-col items-center md:items-end justify-center md:justify-end p-4 md:p-12">
+                    <img
+                    src="my-face.jpg"
+                    alt="handsome bald guy"
+                    class="md:h-60 md:w-60 h-48 w-48 rounded-full border-4 border-slate-100 object-cover"/>
+                </div>
+                <div class="bottom-hero w-full px-8 xl:px-16 2xl:px-24 z-10">
+                    <div class="space-y-8 xl:space-y-12 2xl:space-y-16">
                     <!-- text section -->
+                        <div class="text-bold text-left max-w-7xl">
                         <h1 class="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-medium mb-5 md:mb-8">John Paul Junglen</h1>
                         <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-green-800 mb-5 md:mb-8">I build digital solutions from pixels to databases</h2>
-                        <p class="text-gray-500">I'm a Full-Stack Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on crafting accessible, human-centered products.</p>
+                        <p class="text-gray-500"> I'm a Full-Stack Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on crafting accessible, human-centered products.</p>
                     </div>
                     <!-- button container -->
-                    <div class="button-container flex flex-col sm:items-start gap-4 xl:gap-6 2xl-gap-8 sm:flex-row">
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition-300 hover:bg-green-800 hover:shadow-xl hover-translate-y-1 active:scale-95">View My Work</button>
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition-300 hover:bg-gray-800 hover:shadow-xl hover-translate-y-1 active:scale-95">Get In Touch</button>
+                    <div class="button-container flex flex-col sm:items-start gap-4 xl:gap-6 2xl:gap-8 sm:flex-row">
+                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 hover:shadow-xl hover:translate-y-1 active:scale-95">View My Work</button>
+
+                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition duration-300 hover:bg-gray-800 hover:shadow-xl hover:translate-y-1 active:scale-95">Get In Touch</button>
                     </div>
                 </div>
-            </div>
-            <!-- Text section -->
-        </section>
-        <section class="top-0 h-screen w-full p-4">
-            <div class="text-center">
-                <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Creating Digital Designs</h2>
-                <p class="text-gray-500 mb-5">I am a self-taught developer who is passionate about writing clean code and crafting thoughtful, user-focused designs.</p>
-            </div>
-            <div class="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto mb-16">
-                <div class="">
-                
-                    <h3 class="text-3xl lg:text-2xl xl: text border-b p-2 mb-3">My Journey</h3>
-                    <p class="text-gray-500 mb-5">I'm an aspiring developer at the beginning of my journey into full-stack web development, focused on building a strong foundation in modern technologies and best practices. Each project I take on is an opportunity to grow, experiment, and improve my problem-solving skills.</p>
-                    <p class="text-gray-500 mb-5">My interest in coding started with a curiosity about how digital products work, and it has quickly grown into a passion for creating simple, meaningful user experiences. I'm currently learning tools like React, Node.js, and other web technologies while developing my understanding of the full development process.</p>
-                    <p class="text-gray-500 mb-5">Beyond writing code, I'm dedicated to continuous learning, exploring new concepts, and challenging myself to become better every day. I value clean, readable code and thoughtful design as I work toward becoming a well-rounded developer.</p>
+            </section>
+            <section class="top-0 min-h-screen w-full p-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Creating Digital Designs</h2>
+                    <p class="text-gray-500 mb-5">I am a self-taught developer who is passionate about writing clean code and crafting thoughtful, user-focused designs.</p>
                 </div>
-                <div class="">
-                    <div>Box 1</div>
-                    <div>Box 2</div>
-                    <div>Box 3</div>
-                    <div>Box 4</div>
+                <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-16 lg:max-w-7xl mx-auto mb-4 lg:mb-20">
+                    <div class="container">
+                        <h3 class="text-3xl lg:text-2xl xl:lg mb-3">My Journey</h3>
+                        <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
+                        <p class="text-gray-500 mb-5"> I'm an aspiring developer at the beginning of my journey into full-stack web development, focused on building a strong foundation in modern technologies and best practices. Each project I take on is an opportunity to grow, experiment, and improve my problem-solving skills.</p>
+                        <p class="text-gray-500 mb-5"> My interest in coding started with a curiosity about how digital products work, and it has quickly grown into a passion for creating simple, meaningful user experiences. I'm currently learning tools like React, Node.js, and other web technologies while developing my understanding of the full development process.</p>
+                        <p class="text-gray-500"> Beyond writing code, I'm dedicated to continuous learning, exploring new concepts, and challenging myself to become better every day. I value clean, readable code and thoughtful design as I work toward becoming a well-rounded developer.</p>
+                    </div>
+                    <div class="skills-container">
+                        <h2 class="text-3xl lg:text-2xl xl:lg mb-3">Skills</h2>
+                        <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                                <div class="flex justify-center">
+                                    <img
+                                    class="text-center"
+                                    src="./icons8-html5-50.png"
+                                    alt="html symbol"/>
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl text-green-800">Frontend Development</h3>
+                                    <p class="mt-4 text-gray-600"> HTML5, CSS3, Javascript ES6+, React, Vue.js, TypeScript, Tailwind CSS</p>
+                                </div>
+                            </div>
+                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                                <div class="flex justify-center">
+                                        <img
+                                            class="text-center"
+                                            src="./icons8-backend-50.png"
+                                            alt="backend server"/>
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl text-green-800">Backend Development</h3>
+                                    <p class="mt-4 text-gray-600"> Node.js, Express.js, Python, Django, RESTful APIs, GraphQL, JWT Authenication</p>
+                                </div>
+                            </div>
+                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                                <div class="flex justify-center">
+                                    <img
+                                        class="text-center"
+                                        src="./icons8-database-50.png"
+                                        alt="database icon"/>
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl text-green-800">Database & Cloud</h3>
+                                    <p class="mt-4 text-gray-600">MongoDB, PostgreSQL, MySQL, AWS, Google Cloud, Git</p>
+                                </div>
+                            </div>
+                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl" >
+                                <div class="flex justify-center">
+                                    <img
+                                        class="text-center"
+                                        src="./icons8-paint-brush-50.png"
+                                        alt="paint brush"/>
+                                </div>
+                                <div class="container">
+                                    <h3 class="text-2xl text-green-800">Design & Tools</h3>
+                                    <p class="mt-4 text-gray-600">Figma, Excalidraw, Accessibility, Responsive Design </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="top-0 min-h-screen bg-gray-200 rounded-xl w-full p-4">
+                <div class="flex flex-col text-center mb-10">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">My Featured Projects</h2>
+                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
+                    <p>A curated selection of recent projects and technical proficiencies</p>
                 </div>
-            </div>
-        </section>
-        <!-- <section class="bg-yellow-400 top-0 h-screen w-full"><h2>Hello</h2></section>
-        <section class="bg-green-400 top-0 h-screen w-full"><h2>Hello</h2></section>
-        <section class="bg-blue-400 top-0 h-screen w-full"><h2>Hello</h2></section> -->
-    </main>
-</body>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:max-w-7xl mx-auto mb-4 lg:mb-20">
+                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                        </div>
+                        <div class="p-6">
+                            <div class="left space-y-2">
+                                <h3 class="text-2xl">Hello</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                            </div>
+                            <div class="flex wrap gap-2 mt-4">
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                            </div>
+                            <div class="button-container pt-3 flex gap-5">
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                        </div>
+                        <div class="p-6">
+                            <div class="left space-y-2">
+                                <h3 class="text-2xl">Hello</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                            </div>
+                            <div class="flex wrap gap-2 mt-4">
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                            </div>
+                            <div class="button-container pt-3 flex gap-5">
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
+                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                        </div>
+                        <div class="p-6">
+                            <div class="left space-y-2">
+                                <h3 class="text-2xl">Hello</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                            </div>
+                            <div class="flex wrap gap-2 mt-4">
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
+                            </div>
+                            <div class="button-container pt-3 flex gap-5">
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+  </body>
 </html>
