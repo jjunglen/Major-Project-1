@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Paul Junglen - Full Stack Developer">
+    <title>John Paul Junglen | Full Stack Developer</title>
+    <script 
+    defer 
+    src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+    </script>
+</head>
+<body class="p-5 bg-gray-100 text-slate-800 fonts-sans">
+    <header class="max-4-xl mx-auto text-center bg-slate-800 text-white rounded-2xl">
+        <div class="p-10">
+            <h1 class="text-5xl md:text-7xl mb-4 font-extrabold tracking-tight">John Paul Junglen</h1>
+            <p class="inline-block px-4 py-2 text-slate-300 border border-slate-500 rounded-full font-medium uppercase text-sm tracking-widest" >A Full Stack Developer In Training</p>
+        </div>
+        <nav class="bg-slate-700 p-4">
+            <ul class="flex justify-center gap-8 font-semibold flex-col sm:flex-row">
+                <li><a class="transition-colors hover:text-blue-400 "  href="#about">About Me</a></li>
+                <li><a class="transition-colors hover:text-blue-400 " href="#skills">Skills</a></li>
+                <li><a class="transition-colors hover:text-blue-400 " href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-section font-bold flex flex-col">
+        
+        <!-- About-me Section -->
+        <section id="about" class="bg-white p-8 rounded-2xl shadow-sm flex flex-col md:flex-row items-center gap-12 mt-2 mb-2" >
+            <div class="flex-shrink-0 text-center">
+                <img class="h-48 w-48 rounded-full border-4 border-slate-100 object-cover" src="my-face.jpg" alt="a photo of my face">
+                <h2 class="text-2xl font-bold mt-4">About Me</h2>
+            </div>
+            <div class="text-lg text-slate-600 leading-relaxed">
+                <p class="max-w-xl">Hello, my name is John Paul Junglen. I'm currently completing a full-stack development bootcamp and preparing to launch my career in tech. I'm eager to join the workforce and build impactful applications as a full-stack developer.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm mb-2" id="skills">
+            <h2 class="text-3xl font-bold mb-6 pb-2">Skills & Experinece</h2>
+            <div class="grid md:grid-col-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-blue-600 mb-2 underline decoration-2">Experience</h3>
+                    <a href="#" class="text-slate-600 hover:text-blue-500 italic">My Bootcamp Certificate</a>
+                </div>
+                <div>
+                    <h3 class="font-bold text-blue-600 mb-2 underline decoration-2">Skills in Coding</h3>
+                    <ul class="space-y-1 text-slate-600">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-blue-600 mb-2 underline decoration-2">Currently Learning</h3>
+                    <ul class="space-y-1 text-slate-600">
+                        <li>React & Node.js</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="bg-white p-8 rounded-2xl shadow-sm mb-2">
+            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+            <div class="grid md:grid-cols-3 gap-10 mb-4">
+                <div class="space-y-4">
+                    <p class="flex items-center gap-3"><span class="font-extrabold">Email:</span> <a href="mailto:j.junglen@gmail.com" class="text-blue-600 hover:underline">j.junglen@gmail.com</a></p>
+                    <p class="flex items-center gap-3"><span class="font-extrabold">LinkedIn:</span> <a href="https://www.linkedin.com/in/john-paul-junglen-1baa4b103/" class="text-blue-600 hover:underline">Connect with me</a></p>
+                    <p class="flex items-center gap-3"><span class="font-extrabold">GitHub:</span> <a href="https://github.com/jjunglen" class="text-blue-600 hover:underline">Follow my coding journey</a></p>
+                </div>
+            </div>
+
+            <form class="flex flex-col gap-4">
+                    <input type="text" name="name" id="name" placeholder="Your name" class="p-3 bg-slate-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <input type="text" name="email" id="email" placeholder="Your email" class="p-3 bg-slate-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    <textarea name="message" id="message" placeholder="I'd love to hear from you" class="p-3 bg-slate-50 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    <button type="submit" class="inline-block bg-slate-800 text-white py-3 rounded-lg font-bold hover:bg-slate-900 cursor:pointer">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="max-w-4xl mx-auto text-center py-10 text-slate-500 shadow-sm rounded-2xl">
+        <p>©2026 John Paul Junglen. Future full stack developer</p>
+    </footer>
+
+    <!-- TODO: Add header with your name, professional title, and navigation -->
+    <!-- Navigation should link to: #about, #skills, #contact -->
+
+    <!-- TODO: Add main element -->
+    
+        <!-- TODO: Add About section with id="about" -->
+        <!-- Include: h2 "About Me", professional photo with alt text, 2-3 paragraphs about yourself -->
+        
+        <!-- TODO: Add Skills section with id="skills" -->
+        <!-- Include: h2 "Skills & Experience", multiple h3 categories with organized lists -->
+        
+        <!-- TODO: Add Contact section with id="contact" -->
+        <!-- Include: h2 "Let's Connect", social media links (email, LinkedIn, GitHub), and message form -->
+        <!-- Form should have: name, email, message fields and submit button -->
+        
+    <!-- TODO: Close main element -->
+    
+    <!-- TODO: Add footer with copyright and personal tagline -->
+</body>
+</html>

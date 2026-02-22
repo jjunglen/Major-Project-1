@@ -17,7 +17,7 @@
     <body class="font-bold flex flex-col md:flex-row">
         <header class="md:top-0 md:z-50 text-bold text-black bg-white">
             <aside
-            class="sticky top-0 h-fit w-full md:h-screen md:w-60 flex flex-col items-center p-6 shadow-lg md:shadow-none lg:shadow-2xl rounded-xl">
+            class="relative sm:sticky top-0 h-fit w-full md:h-screen md:w-60 flex flex-col items-center p-6 shadow-lg lg:shadow-2xl rounded-xl">
                 <div>
                     <span class="text-xl md:block text-center">John Paul Junglen</span>
                 </div>
@@ -25,13 +25,13 @@
                   class="flex flex-row w-full justify-center space-x-4 md:space-x-0 md:flex-col md:space-y-9 md:justify-start text-center mt-6">
                   <a
                     href="#"
-                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
                     >Home</a>
                   <a
-                    href="#"
+                    href="#about-section"
                     class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
                     >About</a>
-                  <a href="#"
+                  <a href="#project-section"
                     class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
                     >Projects</a>
                   <a
@@ -58,13 +58,14 @@
                     </div>
                     <!-- button container -->
                     <div class="button-container flex flex-col sm:items-start gap-4 xl:gap-6 2xl:gap-8 sm:flex-row">
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 hover:shadow-xl hover:translate-y-1 active:scale-95">View My Work</button>
+                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 hover:shadow-xl hover:translate-y-1 active:scale-95"><a href="#project-section">View My Wor</a>k</button>
 
                         <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition duration-300 hover:bg-gray-800 hover:shadow-xl hover:translate-y-1 active:scale-95">Get In Touch</button>
                     </div>
                 </div>
             </section>
-            <section class="top-0 min-h-screen w-full p-4">
+            <!-- About me / Skills -->
+            <section id="about-section" class="top-0 min-h-screen w-full p-4">
                 <div class="text-center mb-10">
                     <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Creating Digital Designs</h2>
                     <p class="text-gray-500 mb-5">I am a self-taught developer who is passionate about writing clean code and crafting thoughtful, user-focused designs.</p>
@@ -132,77 +133,82 @@
                         </div>
                     </div>
             </section>
-            <section class="top-0 min-h-screen bg-gray-200 rounded-xl w-full p-4">
-                <div class="flex flex-col text-center mb-10">
-                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">My Featured Projects</h2>
-                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
+            <!-- Project Section -->
+            <section id="project-section" class="top-0 md:min-h-screen bg-gray-200 rounded-xl w-full p-4">
+                <div class="flex flex-col justify-center text-center mb-7">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-6">My Featured Projects</h2>
+                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mx-auto mb-4"></div>
                     <p>A curated selection of recent projects and technical proficiencies</p>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:max-w-7xl mx-auto mb-4 lg:mb-20">
-                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center lg:max-w-7xl mx-auto mb-4 lg:mb-20">
+                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
+                        <div class="h-40 w-full shrink rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="./html.png" alt="HTML code">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-1">
                             <div class="left space-y-2">
-                                <h3 class="text-2xl">Hello</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                                <h3 class="text-xl font-bold mb-2">My First Landing Page</h3>
+                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
+                                    <p class="mt-2 text-gray-400 line-clamp-5">This project is a responsive landing page built using only HTML and CSS as part of my early bootcamp training. The primary objective was to develop a strong foundation in semantic markup, modern layout techniques, and mobile-first responsive design without relying on frameworks or JavaScript. It demonstrates my ability to create clean, accessible, and visually structured user interfaces using core web technologies.</p>
+                                </div>
                             </div>
-                            <div class="flex wrap gap-2 mt-4">
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                            </div>
-                            <div class="button-container pt-3 flex gap-5">
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                <div class="flex wrap gap-2 mb-4">
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">HTML</span>
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">CSS</span>
+                                </div>
+                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="./my-landing-page/index.html">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="https://github.com/jjunglen/Bootcamp-landing-page">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
+                        <div class="h-40 w-full shrink rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="./hero-profile.png" alt="Card thumbnail" alt="hero section">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-1">
                             <div class="left space-y-2">
-                                <h3 class="text-2xl">Hello</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                                <h3 class="text-xl font-bold mb-2">Tailwind - First Bio Page</h3>
+                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
+                                    <p class="mt-2 text-gray-400 line-clamp-5">My debut project using Tailwind CSS. A responsive personal portfolio designed to showcase technical skills, project history, and a modern UI/UX. Features a mobile-first layout with dedicated sections for core proficiencies and user contact. This project served as a deep dive into utility-first CSS, focusing on creating a modular and maintainable codebase. It demonstrates a commitment to responsive design principles, ensuring a seamless user experience across all device scales.</p>
+                                </div>
                             </div>
-                            <div class="flex wrap gap-2 mt-4">
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                            </div>
-                            <div class="button-container pt-3 flex gap-5">
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                <div class="flex wrap gap-2 mb-4">
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">HTML</span>
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">Tailwind CSS</span>
+                                </div>
+                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="./Tailwind-bio/personal-bio-tailwind.html">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="https://github.com/jjunglen/intro-tailwind">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col box-container space-y-2 p-5shadow-md border-gray-50 bg-white lg:mx-auto rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                        <div class="h-48 w-full overflow-hidden rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="./png-transparent-old-school-runescape-youtube-elf-random-icons-child-face-hand-thumbnail.png" alt="Card thumbnail">
+                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
+                        <div class="h-40 w-full shrink rounded-t-xl">
+                            <img class="w-full h-full object-cover" src="" alt="Card thumbnail" alt="Card thumbnail">
                         </div>
-                        <div class="p-6">
+                        <div class="p-6 flex flex-col flex-1">
                             <div class="left space-y-2">
-                                <h3 class="text-2xl">Hello</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laborum aperiam quod facilis nobis, repellendus dicta velit fuga ipsum numquam praesentium tempora suscipit, voluptate quae aspernatur modi itaque sit. Culpa?</p>
+                                <h3 class="text-xl font-bold mb-2">Title: Here</h3>
+                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
+                                    <p class="mt-2 text-gray-400 line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi minus dicta corporis, iste tenetur harum facere praesentium asperiores officiis nam accusamus, veritatis libero architecto suscipit accusantium mollitia quod sed quia!</p>
+                                </div>
                             </div>
-                            <div class="flex wrap gap-2 mt-4">
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                                    <span class="bg-green-200 rounded-2xl px-3 py-1">react</span>
-                            </div>
-                            <div class="button-container pt-3 flex gap-5">
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
-                                    <button class="border rounded-lg px-3 py-1">Click me!</button>
+                                <div class="flex wrap gap-2 mb-4">
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">???</span>
+                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">???</span>
+                                </div>
+                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- Footer -->
+            <section id="contact-section" class="top-0 min-h-screen rounded-xl w-full p-4">
+
             </section>
         </main>
   </body>
