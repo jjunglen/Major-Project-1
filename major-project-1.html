@@ -14,34 +14,34 @@
       src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
     ></script>
     </head>
-    <body class="font-bold flex flex-col md:flex-row">
-        <header class="md:top-0 md:z-50 text-bold text-black bg-white">
+    <body class="font-bold bg-white">
+        <header class="w-full md:fixed md:top-0 md:w-60 md:h-screen sticky z-50">
             <aside
-            class="relative sm:sticky top-0 h-fit w-full md:h-screen md:w-60 flex flex-col items-center p-6 shadow-lg lg:shadow-2xl rounded-xl">
+            class="h-full sticky w-full flex flex-col items-center p-6 shadow-lg lg:shadow-xl rounded-xl">
                 <div>
                     <span class="text-xl md:block text-center">John Paul Junglen</span>
                 </div>
                 <nav
                   class="flex flex-row w-full justify-center space-x-4 md:space-x-0 md:flex-col md:space-y-9 md:justify-start text-center mt-6">
                   <a
-                    href="#"
-                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                    href="#home-section"
+                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
                     >Home</a>
                   <a
                     href="#about-section"
-                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
                     >About</a>
                   <a href="#project-section"
-                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95"
+                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
                     >Projects</a>
                   <a
-                    href="#"
-                    class="sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95">Contact</a>
+                    href="#contact-section"
+                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600">Contact</a>
                 </nav>
-          </aside>
+            </aside>
         </header>
-        <main class="flex-1 rounded-xl">
-            <section class="top-0 min-h-screen w-full z-10 hero">
+        <main class="md:ml-60 p-4">
+            <section id="home-section" class="top-0 min-h-screen w-full z-10 hero">
                 <div class="image-container flex flex-col items-center md:items-end justify-center md:justify-end p-4 md:p-12">
                     <img
                     src="my-face.jpg"
@@ -60,7 +60,7 @@
                     <div class="button-container flex flex-col sm:items-start gap-4 xl:gap-6 2xl:gap-8 sm:flex-row">
                         <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 hover:shadow-xl hover:translate-y-1 active:scale-95"><a href="#project-section">View My Wor</a>k</button>
 
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition duration-300 hover:bg-gray-800 hover:shadow-xl hover:translate-y-1 active:scale-95">Get In Touch</button>
+                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition duration-300 hover:bg-gray-800 hover:shadow-xl hover:translate-y-1 active:scale-95"><a href="#contact-section">Get In Touch</a></button>
                     </div>
                 </div>
             </section>
@@ -74,7 +74,7 @@
                     <div class="container">
                         <h3 class="text-3xl lg:text-2xl xl:lg mb-3">My Journey</h3>
                         <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
-                        <p class="text-gray-500 mb-5"> I'm an aspiring developer at the beginning of my journey into full-stack web development, focused on building a strong foundation in modern technologies and best practices. Each project I take on is an opportunity to grow, experiment, and improve my problem-solving skills.</p>
+                        <p class="text-gray-500 mb-5">I'm an aspiring developer at the beginning of my journey into full-stack web development, focused on building a strong foundation in modern technologies and best practices. Each project I take on is an opportunity to grow, experiment, and improve my problem-solving skills.</p>
                         <p class="text-gray-500 mb-5"> My interest in coding started with a curiosity about how digital products work, and it has quickly grown into a passion for creating simple, meaningful user experiences. I'm currently learning tools like React, Node.js, and other web technologies while developing my understanding of the full development process.</p>
                         <p class="text-gray-500"> Beyond writing code, I'm dedicated to continuous learning, exploring new concepts, and challenging myself to become better every day. I value clean, readable code and thoughtful design as I work toward becoming a well-rounded developer.</p>
                     </div>
@@ -157,8 +157,8 @@
                                     <span class="bg-green-500 text-white rounded-2xl px-3 py-1">CSS</span>
                                 </div>
                             <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="./my-landing-page/index.html">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="https://github.com/jjunglen/Bootcamp-landing-page">Git Hub</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="./my-landing-page/index.html">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="https://github.com/jjunglen/Bootcamp-landing-page">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
@@ -178,8 +178,8 @@
                                     <span class="bg-green-500 text-white rounded-2xl px-3 py-1">Tailwind CSS</span>
                                 </div>
                             <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="./Tailwind-bio/personal-bio-tailwind.html">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="https://github.com/jjunglen/intro-tailwind">Git Hub</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="./Tailwind-bio/personal-bio-tailwind.html">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="https://github.com/jjunglen/intro-tailwind">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
@@ -199,8 +199,8 @@
                                     <span class="bg-green-500 text-white rounded-2xl px-3 py-1">???</span>
                                 </div>
                             <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active-scale-95"><a href="">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active-scale-95"><a href="">Git Hub</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="">Live Demo</a></button>
+                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="">Git Hub</a></button>
                             </div>
                         </div>
                     </div>
@@ -208,8 +208,68 @@
             </section>
             <!-- Footer -->
             <section id="contact-section" class="top-0 min-h-screen rounded-xl w-full p-4">
-
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Let's Build Someting Amazing Together</h2>
+                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mx-auto mb-4"></div>
+                    <p class="text-gray-500 mb-5">Ready to turn your ideas to reality? I would love to hear about your project!</p>
+                </div>
+                <div id="contact-section" class="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+                    <div class="lg:col-spans-1 p-2">
+                        <h3 class="text-xl mb-6">Contact Information</h3>
+                        <div class="space-y-5">
+                            <div class="group">
+                                <a class="flex flex-col p-4 border border-gray-100 bg-green-800 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95 " href="mailto:j.junglen@gmail.com">
+                                    <div class="font-medium text-white">Email</div>
+                                    <div class="text-sm text-gray-300 mb-1">j.junglen@gmail.com</div>
+                                    <div class="text-sm text-green-300 mb-1">I'll respond rain or shine!</div>
+                                </a>
+                            </div>
+                            <div class="group">
+                                <div class="flex flex-col p-4 border border-gray-100 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95">
+                                    <div class="font-medium">Phone</div>
+                                    <div class="text-sm text-gray-500 mb-1">405-708-9853</div>
+                                    <div class="text-sm text-green-800 mb-1">Taking calls 8am-5pm (Monday-Friday)</div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex flex-col p-4 border border-gray-100 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95">
+                                    <div class="font-medium">Location</div>
+                                    <div class="text-sm text-gray-500 mb-1">Dallas, Texas</div>
+                                    <div class="text-sm text-green-800 mb-1">Open to remote opportunites</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 border border-gray-200 rounded-xl p-2">
+                        <h3 class="text-xl mb-5">Send me a Message!</h3>
+                        <form class="container y-space-6" action="">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="y-space-2">
+                                    <label class="text-sm text-gray-700" for="full-name">Full Name:</label>
+                                    <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="text" name="full-name" id="full-name" placeholder="Your name" required>
+                                </div>
+                                <div class="y-space-2">
+                                    <label class="text-sm text-gray-700" for="mail">Email:</label>
+                                    <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="email" name="mail" id="mail" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            <div class="y-space-2 mt-3">
+                                <label class="text-sm text-gray-700" for="subject">Subject:</label>
+                                <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="text" name="subject" id="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="y-space-2 flex flex-col mt-3">
+                                <label class="text-sm text-gray-700" for="email-content">Message:</label>
+                                <textarea class="p-2 border border-gray-200 rounded-xl mt-2" name="content" id="email-content" placeholder="Let me know what you're looking for, or simply stop by to introduce yourself." required></textarea>
+                            </div>
+                            <button class="text-sm mt-3 p-2 border border-gray-200 w-full rounded-xl bg-green-800 text-white tracking-wide hover:bg-green-700" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
+        <footer class="md:ml-60 max-w-7xl text-center py-10 text-slate-500 flex flex-col md:flex-row md:justify-between items-center px-4">
+            <p class="px-6 mb-5 ">©2026 John Paul Junglen. Future full stack developer</p>
+            <a href="#home-section"class="px-2 py-3 text-grey-700 border border-gray-600 rounded-xl bg-white">Back to the top!</a>
+        </footer>
   </body>
 </html>
