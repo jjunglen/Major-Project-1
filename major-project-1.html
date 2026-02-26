@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,267 +9,216 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
     ></script>
-    </head>
-    <body class="font-bold bg-white">
-        <header class="w-full md:fixed md:top-0 md:w-60 md:h-screen sticky z-50">
+    </head> 
+
+    <body class="font-['Inter'] antialiased bg-white text-slate-900">
+        <header class="fixed top-0 left-0 top-0 w-full z-50 bg-white/90 backdrop-blur-sm md:fixed md:w-60 md:h-screen z-50">
             <aside
-            class="h-full sticky w-full flex flex-col items-center p-6 shadow-lg lg:shadow-xl rounded-xl">
-                <div>
-                    <span class="text-xl md:block text-center">John Paul Junglen</span>
+            class="flex h-full flex-row md:flex-col items-center justify-between md:justify-start p-4 md:p-8">
+                <div class="md:mb-12">
+                    <span class="text-xl tracking-tighter font-black block text-center">John Paul Junglen</span>
                 </div>
                 <nav
-                  class="flex flex-row w-full justify-center space-x-4 md:space-x-0 md:flex-col md:space-y-9 md:justify-start text-center mt-6">
+                  class="flex flex-row md:flex-col w-full justify-around md:justify-center gap-2 md:gap-4">
                   <a
                     href="#home-section"
-                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >Home</a>
+                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                    >
+                    <span class="text-center material-symbols-outlined text-lg">home</span>
+                    <span class="hidden md:block text-sm">Home</span>
+                  </a>
                   <a
                     href="#about-section"
-                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >About</a>
+                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                    >
+                    <span class="text-center material-symbols-outlined text-lg">person</span>
+                    <span class="hidden md:block text-sm">About</span>
+                    </a>
                   <a href="#project-section"
-                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >Projects</a>
+                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                    >
+                    <span class="text-center material-symbols-outlined text-lg">code</span>
+                    <span class="hidden md:block text-sm">Projects</span>
+                    </a>
                   <a
                     href="#contact-section"
-                    class="text-center text-gray-600 sm:py-3 sm:px-4 rounded-lg transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600">Contact</a>
+                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                    >
+                    <span class="text-center material-symbols-outlined text-lg">mail</span>
+                    <span class="hidden md:block text-sm">Contact</span>
+                  </a>
                 </nav>
             </aside>
         </header>
-        <main class="md:ml-60 p-4">
-            <section id="home-section" class="top-0 min-h-screen w-full z-10 hero">
-                <div class="image-container flex flex-col items-center md:items-end justify-center md:justify-end p-4 md:p-12">
-                    <img
-                    src="my-face.jpg"
-                    alt="handsome bald guy"
-                    class="md:h-60 md:w-60 h-48 w-48 rounded-full border-4 border-slate-100 object-cover"/>
+        <main class="mt-10 md:mt-0 md:ml-60 p-6 lg:p-16">
+            <section id="home-section" class="min-h-[100vh] flex flex-col justify-center py-11">
+        <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10">
+            <div class="relative">
+                <div class="absolute bg-green-300 rounded-2xl blur-2xl opacity-60"></div>
+                <img src="my-face.jpg" alt="John Paul" class="relative h-55 w-55 lg:h-80 lg:w-80 rounded-full border-6 border-white object-cover shadow-xl" />
+            </div>
+            <div class="max-w-4xl space-y-6">
+                <h1 class="text-6xl lg:text-8xl font-black tracking-tighter text-slate-900">
+                    John Paul <br/><span class="text-green-800">Junglen</span>
+                </h1>
+                <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-slate-700">I build digital solutions from pixels to databases</h2>
+                <p class="text-slate-500 text-lg lg:text-xl font-medium max-w-xl">A Full-Stack Developer focused on building accessible, human-centered products that solve real-world problems.</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#project-section" class="flex items-center gap-2 px-8 py-4 bg-green-800 text-white rounded-full font-bold shadow-lg hover:bg-green-700 transition-all hover:-translate-y-1">
+                        My Projects <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                    <a href="#contact-section" class="px-8 py-4 bg-slate-900 text-white rounded-full font-bold shadow-lg hover:bg-slate-800 transition-all hover:-translate-y-1">Get In Touch</a>
                 </div>
-                <div class="bottom-hero w-full px-8 xl:px-16 2xl:px-24 z-10">
-                    <div class="space-y-8 xl:space-y-12 2xl:space-y-16">
-                    <!-- text section -->
-                        <div class="text-bold text-left max-w-7xl">
-                        <h1 class="text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-medium mb-5 md:mb-8">John Paul Junglen</h1>
-                        <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-green-800 mb-5 md:mb-8">I build digital solutions from pixels to databases</h2>
-                        <p class="text-gray-500"> I'm a Full-Stack Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on crafting accessible, human-centered products.</p>
-                    </div>
-                    <!-- button container -->
-                    <div class="button-container flex flex-col sm:items-start gap-4 xl:gap-6 2xl:gap-8 sm:flex-row">
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 hover:shadow-xl hover:translate-y-1 active:scale-95"><a href="#project-section">View My Wor</a>k</button>
-
-                        <button class="p-2 items-center justify-center gap-2 rounded-lg px-8 py-3 shadow-md bg-black text-white font-medium transition duration-300 hover:bg-gray-800 hover:shadow-xl hover:translate-y-1 active:scale-95"><a href="#contact-section">Get In Touch</a></button>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+      </section>
             <!-- About me / Skills -->
-            <section id="about-section" class="top-0 min-h-screen w-full p-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Creating Digital Designs</h2>
-                    <p class="text-gray-500 mb-5">I am a self-taught developer who is passionate about writing clean code and crafting thoughtful, user-focused designs.</p>
+        <section id="about-section" class="py-24 border-t border-slate-200">
+            <div class="grid lg:grid-cols-2 gap-14 items-start mb-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-black tracking-tighter">My Journey</h2>
+                    <div class="w-14 h-1 bg-green-700 rounded-full"></div>
+                    <div class="space-y-3 text-slate-500 font-medium text-lg">
+                        <p>I'm an aspiring developer focused on building a strong foundation in modern technologies and best practices.</p>
+                        <p>My interest in coding started with a curiosity about how digital products work, which evolved into a passion for simple, meaningful user experiences.</p>
+                        <p>I value clean, readable code and thoughtful design as I work toward becoming a well-rounded developer.</p>
+                    </div>
                 </div>
-                <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-16 lg:max-w-7xl mx-auto mb-4 lg:mb-20">
-                    <div class="container">
-                        <h3 class="text-3xl lg:text-2xl xl:lg mb-3">My Journey</h3>
-                        <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
-                        <p class="text-gray-500 mb-5">I'm an aspiring developer at the beginning of my journey into full-stack web development, focused on building a strong foundation in modern technologies and best practices. Each project I take on is an opportunity to grow, experiment, and improve my problem-solving skills.</p>
-                        <p class="text-gray-500 mb-5"> My interest in coding started with a curiosity about how digital products work, and it has quickly grown into a passion for creating simple, meaningful user experiences. I'm currently learning tools like React, Node.js, and other web technologies while developing my understanding of the full development process.</p>
-                        <p class="text-gray-500"> Beyond writing code, I'm dedicated to continuous learning, exploring new concepts, and challenging myself to become better every day. I value clean, readable code and thoughtful design as I work toward becoming a well-rounded developer.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="p-6 bg-slate-100 border border-slate-200 rounded-2xl transition-all hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                        <span class="material-symbols-outlined text-green-700 mb-4 block">terminal</span>
+                        <h3 class="font-bold text-lg mb-2">Frontend Development</h3>
+                        <p class="text-sm text-slate-500">HTML5, CSS3, Javascript ES6+, React, Vue.js, TypeScript, Tailwind CSS</p>
                     </div>
-                    <div class="skills-container">
-                        <h2 class="text-3xl lg:text-2xl xl:lg mb-3">Skills</h2>
-                        <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mb-4"></div>
-                        <div class="grid lg:grid-cols-2 gap-8">
-                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                                <div class="flex justify-center">
-                                    <img
-                                    class="text-center"
-                                    src="./icons8-html5-50.png"
-                                    alt="html symbol"/>
-                                </div>
-                                <div class="container">
-                                    <h3 class="text-2xl text-green-800">Frontend Development</h3>
-                                    <p class="mt-4 text-gray-600"> HTML5, CSS3, Javascript ES6+, React, Vue.js, TypeScript, Tailwind CSS</p>
-                                </div>
-                            </div>
-                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                                <div class="flex justify-center">
-                                        <img
-                                            class="text-center"
-                                            src="./icons8-backend-50.png"
-                                            alt="backend server"/>
-                                </div>
-                                <div class="container">
-                                    <h3 class="text-2xl text-green-800">Backend Development</h3>
-                                    <p class="mt-4 text-gray-600"> Node.js, Express.js, Python, Django, RESTful APIs, GraphQL, JWT Authenication</p>
-                                </div>
-                            </div>
-                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
-                                <div class="flex justify-center">
-                                    <img
-                                        class="text-center"
-                                        src="./icons8-database-50.png"
-                                        alt="database icon"/>
-                                </div>
-                                <div class="container">
-                                    <h3 class="text-2xl text-green-800">Database & Cloud</h3>
-                                    <p class="mt-4 text-gray-600">MongoDB, PostgreSQL, MySQL, AWS, Google Cloud, Git</p>
-                                </div>
-                            </div>
-                            <div class="text-center box-container space-y-2 p-5 bg-gray-200 max-w-7xl shadow-md lg:mx-auto xl:h-64 rounded-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl" >
-                                <div class="flex justify-center">
-                                    <img
-                                        class="text-center"
-                                        src="./icons8-paint-brush-50.png"
-                                        alt="paint brush"/>
-                                </div>
-                                <div class="container">
-                                    <h3 class="text-2xl text-green-800">Design & Tools</h3>
-                                    <p class="mt-4 text-gray-600">Figma, Excalidraw, Accessibility, Responsive Design </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="p-6 bg-slate-100 border border-slate-200 rounded-2xl transition-all hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                        <span class="material-symbols-outlined text-green-700 mb-4 block">database</span>
+                        <h3 class="font-bold text-lg mb-2">Backend Development</h3>
+                        <p class="text-sm text-slate-500">>Node.js, Express, Python, Django, JWT</p>
                     </div>
-            </section>
-            <!-- Project Section -->
-            <section id="project-section" class="top-0 md:min-h-screen bg-gray-200 rounded-xl w-full p-4">
-                <div class="flex flex-col justify-center text-center mb-7">
-                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-6">My Featured Projects</h2>
-                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mx-auto mb-4"></div>
-                    <p>A curated selection of recent projects and technical proficiencies</p>
+                    <div class="p-6 bg-slate-100 border border-slate-200 rounded-2xl transition-all hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                        <span class="material-symbols-outlined text-green-700 mb-4 block">cloud</span>
+                        <h3 class="font-bold text-lg mb-2">Database & Cloud</h3>
+                        <p class="text-sm text-slate-500">MongoDB, PostgreSQL, AWS, Git</p>
+                    </div>
+                    <div class="p-6 bg-slate-100 border border-slate-200 rounded-2xl transition-all hover:bg-white hover:shadow-lg hover:-translate-y-1">
+                        <span class="material-symbols-outlined text-green-700 mb-4 block">brush</span>
+                        <h3 class="font-bold text-lg mb-2">Design</h3>
+                        <p class="text-sm text-slate-500">Figma, Excalidraw, Accessibility, Responsive Design</p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center lg:max-w-7xl mx-auto mb-4 lg:mb-20">
-                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
-                        <div class="h-40 w-full shrink rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="./html.png" alt="HTML code">
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <div class="left space-y-2">
-                                <h3 class="text-xl font-bold mb-2">My First Landing Page</h3>
-                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
-                                    <p class="mt-2 text-gray-400 line-clamp-5">This project is a responsive landing page built using only HTML and CSS as part of my early bootcamp training. The primary objective was to develop a strong foundation in semantic markup, modern layout techniques, and mobile-first responsive design without relying on frameworks or JavaScript. It demonstrates my ability to create clean, accessible, and visually structured user interfaces using core web technologies.</p>
-                                </div>
-                            </div>
-                                <div class="flex wrap gap-2 mb-4">
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">HTML</span>
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">CSS</span>
-                                </div>
-                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="./my-landing-page/index.html">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="https://github.com/jjunglen/Bootcamp-landing-page">Git Hub</a></button>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <!-- Project Section -->
+        <section id="project-section" class="py-6 border-t border-slate-200 text-white rounded-2xl bg-slate-800">
+            <div class="text-center mb-12 space-y-4">
+                <h2 class="text-5xl lg:text-6xl font-black">Featured Projects</h2>
+                <div class="w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mx-auto mb-4"></div>
+                <p class="text-slate-400 font-medium">A curated selection of recent projects and technical proficiencies</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                <div class="group bg-slate-600/40 border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-700">
+                    <div class="h-48 bg-slate-600 overflow-hidden">
+                        <img src="./html.png" alt="Project" class="w-full object-cover group-hover:scale-105 transition-transform duration-400">
                     </div>
-                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
-                        <div class="h-40 w-full shrink rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="./hero-profile.png" alt="Card thumbnail" alt="hero section">
+                    <div class="p-8 space-y-3">
+                        <h3 class="text-2xl font-bold">First Landing Page</h3>
+                        <p class="text-slate-400 text-sm font-medium line-clamp-4">Responsive landing page built using semantic HTML and custom CSS. Focused on mobile-first design principles.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">CSS</span>
                         </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <div class="left space-y-2">
-                                <h3 class="text-xl font-bold mb-2">Tailwind - First Bio Page</h3>
-                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
-                                    <p class="mt-2 text-gray-400 line-clamp-5">My debut project using Tailwind CSS. A responsive personal portfolio designed to showcase technical skills, project history, and a modern UI/UX. Features a mobile-first layout with dedicated sections for core proficiencies and user contact. This project served as a deep dive into utility-first CSS, focusing on creating a modular and maintainable codebase. It demonstrates a commitment to responsive design principles, ensuring a seamless user experience across all device scales.</p>
-                                </div>
-                            </div>
-                                <div class="flex wrap gap-2 mb-4">
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">HTML</span>
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">Tailwind CSS</span>
-                                </div>
-                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="./Tailwind-bio/personal-bio-tailwind.html">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="https://github.com/jjunglen/intro-tailwind">Git Hub</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col h-[550px] md:max-w-sm mx-auto w-full bg-white shadow-md rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl overflow-hidden border border-gray-100">
-                        <div class="h-40 w-full shrink rounded-t-xl">
-                            <img class="w-full h-full object-cover" src="" alt="Card thumbnail" alt="Card thumbnail">
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <div class="left space-y-2">
-                                <h3 class="text-xl font-bold mb-2">Title: Here</h3>
-                                <div class="max-h-32 overflow-y-auto pr-3 text-sm text-gray-500 mb-4">
-                                    <p class="mt-2 text-gray-400 line-clamp-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi minus dicta corporis, iste tenetur harum facere praesentium asperiores officiis nam accusamus, veritatis libero architecto suscipit accusantium mollitia quod sed quia!</p>
-                                </div>
-                            </div>
-                                <div class="flex wrap gap-2 mb-4">
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">???</span>
-                                    <span class="bg-green-500 text-white rounded-2xl px-3 py-1">???</span>
-                                </div>
-                            <div class="button-container pt-5 flex flex-col sm:flex-row gap-4">
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-green-700 text-white font-medium transition duration-300 hover:bg-green-800 active:scale-95"><a href="">Live Demo</a></button>
-                                    <button class="flex-1 text-center whitespace-nowrap rounded-lg px-4 py-3 bg-gray-700 text-white font-medium transition duration-300 hover:bg-gray-800 active:scale-95"><a href="">Git Hub</a></button>
-                            </div>
+                        <div class="flex gap-4 pt-4">
+                            <a class="flex-1 text-center px-5 py-3 bg-green-700 rounded-xl font-bold text-sm hover:bg-green-600 transition-colors " href=""./my-landing-page/index.html">Demo</a>
+                            <a class="flex-1 text-center px-2 py-3 bg-slate-500 rounded-xl font-bold text-sm hover:bg-slate-600 transition-colors " href="https://github.com/jjunglen/Bootcamp-landing-page">Git Hub</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Footer -->
-            <section id="contact-section" class="top-0 min-h-screen rounded-xl w-full p-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-black mb-5 md:mb-8">Let's Build Someting Amazing Together</h2>
-                    <div class=" w-12 hover:w-52 transition-all duration-200 ease-in-out h-1 bg-green-800 mx-auto mb-4"></div>
-                    <p class="text-gray-500 mb-5">Ready to turn your ideas to reality? I would love to hear about your project!</p>
-                </div>
-                <div id="contact-section" class="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                    <div class="lg:col-spans-1 p-2">
-                        <h3 class="text-xl mb-6">Contact Information</h3>
-                        <div class="space-y-5">
-                            <div class="group">
-                                <a class="flex flex-col p-4 border border-gray-100 bg-green-800 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95 " href="mailto:j.junglen@gmail.com">
-                                    <div class="font-medium text-white">Email</div>
-                                    <div class="text-sm text-gray-300 mb-1">j.junglen@gmail.com</div>
-                                    <div class="text-sm text-green-300 mb-1">I'll respond rain or shine!</div>
-                                </a>
-                            </div>
-                            <div class="group">
-                                <div class="flex flex-col p-4 border border-gray-100 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95">
-                                    <div class="font-medium">Phone</div>
-                                    <div class="text-sm text-gray-500 mb-1">405-708-9853</div>
-                                    <div class="text-sm text-green-800 mb-1">Taking calls 8am-5pm (Monday-Friday)</div>
-                                </div>
-                            </div>
-                            <div class="group">
-                                <div class="flex flex-col p-4 border border-gray-100 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg active:scale-95">
-                                    <div class="font-medium">Location</div>
-                                    <div class="text-sm text-gray-500 mb-1">Dallas, Texas</div>
-                                    <div class="text-sm text-green-800 mb-1">Open to remote opportunites</div>
-                                </div>
-                            </div>
+                <div class="group bg-slate-600/40 border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-700">
+                    <div class="h-48 bg-slate-600 overflow-hidden">
+                        <img src="./hero-profile.png" alt="hero-thumbnail" class="w-full object-cover group-hover:scale-105 transition-transform duration-400">
+                    </div>
+                    <div class="p-8 space-y-3">
+                        <h3 class="text-2xl font-bold">Tailwind - First Bio Page</h3>
+                        <p class="text-slate-400 text-sm font-medium line-clamp-4">My debut project using Tailwind CSS. A responsive personal portfolio designed to showcase technical skills, project history, and a modern UI/UX.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">Tailwind CSS</span>
+                        </div>
+                        <div class="flex gap-4 pt-4">
+                            <a class="flex-1 text-center px-5 py-3 bg-green-700 rounded-xl font-bold text-sm hover:bg-green-600 transition-colors " href="./Tailwind-bio/personal-bio-tailwind.html">Demo</a>
+                            <a class="flex-1 text-center px-2 py-3 bg-slate-500 rounded-xl font-bold text-sm hover:bg-slate-600 transition-colors " href="hhttps://github.com/jjunglen/intro-tailwind">Git Hub</a>
                         </div>
                     </div>
-                    <div class="lg:col-span-2 border border-gray-200 rounded-xl p-2">
-                        <h3 class="text-xl mb-5">Send me a Message!</h3>
-                        <form class="container y-space-6" action="">
-                            <div class="grid grid-cols-2 gap-5">
-                                <div class="y-space-2">
-                                    <label class="text-sm text-gray-700" for="full-name">Full Name:</label>
-                                    <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="text" name="full-name" id="full-name" placeholder="Your name" required>
-                                </div>
-                                <div class="y-space-2">
-                                    <label class="text-sm text-gray-700" for="mail">Email:</label>
-                                    <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="email" name="mail" id="mail" placeholder="your.email@example.com" required>
-                                </div>
-                            </div>
-                            <div class="y-space-2 mt-3">
-                                <label class="text-sm text-gray-700" for="subject">Subject:</label>
-                                <input class="p-2 border border-gray-200 rounded-xl w-full mt-2" type="text" name="subject" id="subject" placeholder="What's this about?" required>
-                            </div>
-                            <div class="y-space-2 flex flex-col mt-3">
-                                <label class="text-sm text-gray-700" for="email-content">Message:</label>
-                                <textarea class="p-2 border border-gray-200 rounded-xl mt-2" name="content" id="email-content" placeholder="Let me know what you're looking for, or simply stop by to introduce yourself." required></textarea>
-                            </div>
-                            <button class="text-sm mt-3 p-2 border border-gray-200 w-full rounded-xl bg-green-800 text-white tracking-wide hover:bg-green-700" type="submit">Send Message</button>
-                        </form>
+                </div>
+                <div class="group bg-slate-600/40 border border-slate-700 rounded-2xl overflow-hidden hover:bg-slate-700">
+                    <div class="h-48 bg-slate-600 overflow-hidden">
+                        <img src="" alt="Project" class="w-full object-cover group-hover:scale-105 transition-transform duration-400">
+                    </div>
+                    <div class="p-8 space-y-3">
+                        <h3 class="text-2xl font-bold">Title: Here</h3>
+                        <p class="text-slate-400 text-sm font-medium line-clamp-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tenetur illum sed maxime explicabo dolorem pariatur est sapiente cum atque. Harum ea dolores enim sequi praesentium dolore quisquam nam adipisci.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">???</span>
+                            <span class="px-3 py-1 bg-green-900/30 text-green-400 text-xs font-bold rounded-full">???</span>
+                        </div>
+                        <div class="flex gap-4 pt-4">
+                            <a class="flex-1 text-center px-5 py-3 bg-green-700 rounded-xl font-bold text-sm hover:bg-green-600 transition-colors " href="#">Demo</a>
+                            <a class="flex-1 text-center px-2 py-3 bg-slate-500 rounded-xl font-bold text-sm hover:bg-slate-600 transition-colors " href="#">Git Hub</a>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact-section" class="py-24 border-t border-slate-200">
+            <div class="w-full mx-auto grid lg:grid-cols-5 gap-16">
+                <div class="lg:col-span-2 space-y-8">
+                    <h2 class="text-4xl font-black tracking-tighter leading-tight">Let's build something <span class="text-green-800">amazing</span> together.</h2>
+                    <div class="w-14 h-1 bg-green-700 rounded-full"></div>
+                    <div class="space-y-4">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-slate-900 hover:bg-slate-900 transition-all hover:-translate-y-1 group">
+                        <a href="mailto:j.junglen@gmail.com" class="flex flex-col gap-1 group">
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1 group-hover:text-slate-300">Email</span>
+                            <span class="font-bold text-slate-900 group-hover:text-white">j.junglen@gmail.com</span>
+                        </a>
+                    </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-slate-300 hover:-translate-y-1">
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Phone</p>
+                            <p class="font-bold text-slate-900">(405)-708-9853</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 transition-all hover:bg-slate-300 hover:-translate-y-1">
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Location</p>
+                            <p class="font-bold text-slate-900">Dallas, Texas</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="md:ml-60 max-w-7xl text-center py-10 text-slate-500 flex flex-col md:flex-row md:justify-between items-center px-4">
-            <p class="px-6 mb-5 ">©2026 John Paul Junglen. Future full stack developer</p>
-            <a href="#home-section"class="px-2 py-3 text-grey-700 border border-gray-600 rounded-xl bg-white">Back to the top!</a>
-        </footer>
+                <div class="lg:col-span-3">
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Full Name" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-slate-800 transition-colors">
+                            <input type="email" placeholder="Email Address" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-slate-800 transition-colors">
+                            <input type="text" placeholder="Subject" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-slate-800 transition-colors">
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-slate-800 transition-colors md:col-span-2"></textarea>
+                            <button class="w-full py-4 bg-green-800 text-white rounded-2xl font-black uppercase tracking-widest hover:bg-green-700 transition-all shadow-lg active:scale-[0.95] md:col-span-2">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="md:ml-64 p-8 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-400 font-medium text-sm">© 2026 John Paul Junglen. Future Full-Stack Developer.</p>
+        <a href="#home-section" class="text-sm font-bold text-green-800 hover:underline">Back to top ↑</a>
+    </footer>
   </body>
 </html>
