@@ -60,43 +60,42 @@
             </aside>
         </header>
         <main class="mt-10 md:mt-0 md:ml-60 p-6 lg:p-16">
-            
-            <el-dropdown trigger="click" class="fixed z-50 mt-1 inline-block sm:hidden right-6">
-                <button class="inline-flex w-full justify-center font-semibold inset-ring-1 rounded-full inset-ring-gray-300">
+            <div class="fixed z-50 mt-1 inline-block sm:hidden right-6">
+                <button trigger="click" popovertarget="mobileMenu" class="inline-flex w-full justify-center font-semibold inset-ring-1 rounded-full inset-ring-gray-300">
                     <span class="material-symbols-outlined border bg-white border-slate-300 hover:border-slate-400 hover:bg-slate-200 transition-all duration-300 active:bg-white  shadow-xl rounded-full px-3 py-3 active:scale-85">menu</span>
                 </button>
-                <el-dropdown-menu anchor="bottom end" popover class="w-54 origin-top-right rounded-lg bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                <div class="py-1">
-                     <a
-                    href="#home-section"
-                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >
-                    <span class="text-center material-symbols-outlined text-lg">home</span>
-                    <span class="block text-sm">Home</span>
-                  </a>
-                  <a
-                    href="#about-section"
-                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >
-                    <span class="text-center material-symbols-outlined text-lg">person</span>
-                    <span class="block text-sm">About</span>
-                    </a>
-                  <a href="#project-section"
-                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >
-                    <span class="text-center material-symbols-outlined text-lg">code</span>
-                    <span class="block text-sm">Projects</span>
-                    </a>
-                  <a
-                    href="#contact-section"
-                    class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
-                    >
-                    <span class="text-center material-symbols-outlined text-lg">mail</span>
-                    <span class="block text-sm">Contact</span>
-                  </a>
+                <div id="mobileMenu" popover anchor="bottom end" class="w-56 origin-top-right rounded-lg bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                    <div class="py-1">
+                        <a
+                        href="#home-section"
+                        class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                        >
+                            <span class="text-center material-symbols-outlined text-lg">home</span>
+                            <span class="block text-sm">Home</span>
+                        </a>
+                        <a
+                        href="#about-section"
+                        class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                        >
+                            <span class="text-center material-symbols-outlined text-lg">person</span>
+                            <span class="block text-sm">About</span>
+                        </a>
+                        <a href="#project-section"
+                        class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semibold transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                        >
+                            <span class="text-center material-symbols-outlined text-lg">code</span>
+                            <span class="block text-sm">Projects</span>
+                        </a>
+                        <a
+                        href="#contact-section"
+                        class="flex items-center gap-4 py-3 px-4 rounded-xl text-slate-500 md:shadow-sm md:border-transparent font-semiboild transition-all duration-300 hover:text-white hover:opacity hover:bg-green-600 active:bg-green-400 active:scale-95 target:bg-green-600"
+                        >
+                            <span class="text-center material-symbols-outlined text-lg">mail</span>
+                            <span class="block text-sm">Contact</span>
+                        </a>
+                    </div>
                 </div>
-            </el-dropdown-menu>
-            </el-dropdown>
+            </div>
             <section id="home-section" class="min-h-[100vh] flex flex-col justify-center py-6">
         <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10">
             <div class="relative">
