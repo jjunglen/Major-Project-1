@@ -44,5 +44,5 @@ I enjoy turning ideas into real, functional products — from UI to database.
 ## 📂 Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/jjunglen/Major-Project-1.git
+cd Major-Project-1
